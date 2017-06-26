@@ -1,0 +1,38 @@
+.botw-dialog {
+    width: 800px;
+    height: 320px;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(50, 50, 50, 0.5);
+    color: #fffff4;
+    /*color: #f8f8f8;*/
+    border-radius: 10px;
+    position: absolute;
+    top: 35vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.botw-dialog img {
+    flex: 0 0 30%;
+    max-height: 400px;
+}
+
+.botw-dialog .title {
+    /*border-bottom: 1px solid;*/
+    font-style: italic;
+    font-size: 28pt;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    background-color: red;
+}
