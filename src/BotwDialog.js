@@ -10,7 +10,7 @@ class BotwDialog extends Component {
     }
     render() {
         return (
-            <div className="botw-dialog" ref={x => { this.dialog = x; }}>
+            <dialog className="botw-dialog" ref={x => { this.dialog = x; }}>
                 <div className="left-wrapper">
                     <img src={this.props.imgSrc} alt="Dialog logo" />
                 </div>
@@ -18,7 +18,7 @@ class BotwDialog extends Component {
                     <header className="title">{this.props.dialogTitle}</header>
                     {this.props.children}
                 </div>
-            </div>
+            </dialog>
         );
     }
 
